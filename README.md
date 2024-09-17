@@ -7,8 +7,11 @@ telegram: [invite-link](https://t.me/+kYK4m9cU395jNDcy)
 ### Lectures
 
 - 10.09.2024 Lec01 Intro ([adoc](/lec-01-01/lec-01-01.adoc) | [pdf](/lec-01-01/lec-01-01.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-01/html/%D0%A1%2B%2B.html#/))
+- 17.09.2024 Lec02 Fundamentals ([adoc](/lec-01-02/lec-01-02.adoc) | [pdf](/lec-01-02/lec-01-02.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-02/html/%D0%A1%2B%2B.html#/))
 
 ### Seminars
+
+- 11.09.2024 Sem01, Deadline: 18.09.2024 00:01 (*)
 
 ### Homeworks
 
