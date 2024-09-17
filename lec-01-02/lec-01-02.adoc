@@ -1,0 +1,590 @@
+= С++
+:icons: font
+:lecture: Лекция 1
+:table-caption!:
+:example-caption!:
+:source-highlighter: highlightjs
+:highlightjs-theme: https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.8.0/build/styles/github.min.css
+:revealjs_hash: true
+:customcss: https://rawcdn.githack.com/fedochet/asciidoc-revealjs-online-converter/7012d6dd12132363bbec8ba4800272ceb6d0a3e6/asciidoc_revealjs_custom_style.css
+:revealjs_theme: white
+:stylesheet: main.css
+:toc:
+:toclevels: 4
+
+== Лекция 2
+
+Fundamentals
+
+== Тип
+
+- свойство сущностей (функции, объектов, выражений)
+- определяет множество операций над сущностями
+- задает семантику последовательности битов
+
+== Фундаментальные типы
+
+- `void`
+- `std::nullptr_t`
+- `sizeof`
+- арифметические типы
+
+
+=== Boolean
+
+- Тип: `bool`
+
+- Значения: `true | false`
+
+- `sizeof(bool) >= 1`
+
+=== Integer types
+
+- Тип: `int`
+- Модификаторы:
+    * Знаковость: `signed`, `unsigned`
+    * Размер: `short`, `long`, `long long`
+
+> при использовании модификатора `int` может быть опущен
+
+> `signed` используется по умолчанию
+
+=== Integer types
+
+[source,cpp]
+----
+// Width in bytes by C++ standard:
+sizeof(short int) == sizeof(short) >= 2
+
+sizeof(int) >= 2
+
+sizeof(long int) == sizeof(long) >= 4
+
+sizeof(long long int) == sizeof(long long) >= 8
+----
+
+- Знаковость не влияет на размер
+- Связь с моделью данных: LP32, ILP32, LLP64, LP64
+
+=== Fixed width integer types
+
+[source,cpp]
+----
+// Требуется гарантия размера типа
+#include <cstdint>
+
+// signed
+int8_t i8;   // -128..127
+int16_t i16; // -32768..32767
+int32_t i32;
+int64_t i64;
+
+// unsigned
+uint8_t ui8;   // 0..255
+uint16_t ui16; // 0..65535
+uint32_t ui32;
+uint64_t ui64;
+----
+
+=== Floating point types
+
+- `float`
+- `double`
+- `long double`
+
+Special values: +INF, -INF, -0.0, NaN
+
+=== Float
+
+image::https://media.geeksforgeeks.org/wp-content/uploads/Single-Precision-IEEE-754-Floating-Point-Standard.jpg[]
+
+https://www.h-schmidt.net/FloatConverter/IEEE754.html[play with bits]
+
+=== Float
+
+ dec to bin:      4.5 -> 100.1
+ normalization:   1.001 * 2^2
+
+ mantissa:                     001
+ (biased) exponent: 127 + 2 -> 10000001
+
+=== Double
+
+image::https://media.geeksforgeeks.org/wp-content/uploads/Double-Precision-IEEE-754-Floating-Point-Standard-1024x266.jpg[]
+
+=== Long double
+
+https://en.wikipedia.org/wiki/Long_double[Read wiki]
+
+=== Character types
+
+- `char`
+- `signed char`
+- `unsigned char`
+- `wchar_t`
+- `char16_t` (C++11)
+- `char32_t` (C++11)
+- `char8_t` (C++20)
+
+=== Character types
+
+> `char`, `unsigned char`, `signed char` -- разные типы
+
+[source, cpp]
+----
+#include <iostream>
+#include <type_traits>
+
+int main()
+{
+    std::cout
+        << std::is_same_v<char, unsigned char>
+        << std::is_same_v<char, signed char>;
+}
+
+// Output: 00
+----
+
+=== `char`
+
+- эффективное представление символа (текста)
+- знаковость зависит от платформы:
+  * `unsigned` на ARM, PowerPC
+  * `signed` на x86, x64
+- `sizeof(char) == 1`
+
+=== `unsigned char`
+
+- используется для побайтового представления объекта в памяти
+
+=== UTF
+
+- `wchar_t` - UTF-16 on Windows
+- `char16_t` - UTF-16
+- `char32_t` - UTF-32
+- `char8_t` - UTF-8
+
+https://godbolt.org/z/M78YK7WoT[wchar_t/char example]
+
+=== Свойства арифметических типов
+
+`std::numeric_limits<T>` из `<limits>`
+
+[source,cpp]
+----
+#include <limits>
+
+char maxChar = std::numeric_limits<char>::max();
+double minDouble = std::numeric_limits<double>::min();
+----
+
+=== References
+
+https://en.cppreference.com/w/cpp/language/types[en.cppreference.com/w/cpp/language/types]
+
+https://en.cppreference.com/w/cpp/types/is_fundamental[en.cppreference.com/w/cpp/types/is_fundamental]
+
+https://en.cppreference.com/w/cpp/types/numeric_limits[en.cppreference.com/w/cpp/types/numeric_limits]
+
+== Литералы
+
+ литерал - запись в исходном коде, представляющая собой
+           фиксированное значение определенного типа.
+
+[source,cpp]
+----
+'a'        // char
+
+10         // int
+20u  20U   // unsigned int
+10L  10l   // long
+10UL 10ul  // unsigned long
+
+12.2f      // float
+12.2       // double
+
+true false // bool
+
+"abcd";    // c-строка
+
+nullptr;   // nullptr_t
+----
+
+https://en.cppreference.com/w/cpp/language/string_literal[String literals], https://en.cppreference.com/w/cpp/language/integer_literal[Integer literals]
+
+== Пользовательские литералы
+
+[source,cpp]
+----
+std::string operator""_x2 (const char* str, std::size_t)
+{
+    return std::string{str} + str;
+}
+int main() {
+    std::cout << "abc"_x2 << '\n';
+}
+----
+
+== Операторы
+
+=== Сравнение
+[source,cpp]
+----
+int a = getA();
+int b = getB();
+----
+a == b;
+
+a != b;
+
+a < b;
+a > b;
+
+a \<= b;
+a >= b;
+
+=== Арифметика
+[source,cpp]
+----
+int a = getA();
+int b = getB();
+
++a;
+-a;
+
+a + b; a - b; a * b; a / b; a % b;
+
+// bitwise
+~a;     // NOT
+a & b;  // AND
+a | b;  // OR
+a ^ b;  // XOR
+
+a << b; a >> b; // SHIFT
+----
+
+=== Присваивание
+[source,cpp]
+----
+int a = getA();
+int b = getB();
+
+a = b;
+
+a += b; a -= b; a *= b; a /= b; a %= b;
+
+a &= b; a |= b; a ^= b;
+
+a <<= b; a >>= b;
+----
+
+=== Инкремент, Декремент
+
+[source,cpp]
+----
+
+int a = 10;
+
+// prefix
+++a;
+--a;
+
+// postfix
+a++;
+a--;
+----
+
+=== Prefix vs Postfix
+[source,cpp]
+----
+int a = 10;
+int b = a++; // postfix
+assert(a == 11);
+assert(b == 10);
+
+int c = 10;
+int d = ++c; // prefix
+assert(c == 11);
+assert(d == 11);
+----
+
+=== Logic
+
+[source,cpp]
+----
+bool a = getA();
+bool b = getB();
+
+bool c = !a;
+bool d = getA() && getB(); // Short-circuit evaluation
+bool e = getA() || getB(); // Short-circuit evaluation
+----
+
+== Pointers
+
+[source,cpp]
+----
+int main() {
+    double pi = 3.1415;
+
+    double* ptrToPi = &pi;
+}
+----
+
+=== Pointer values
+
+- pointer to object/function
+- null pointer
+- invalid pointer
+
+=== Pointer to object
+
+Представляет адрес первого байта памяти, в которой расположен объект
+
+[source,cpp]
+----
+int object = 3;
+
+int* ptr = &object // address-of operator
+
+*ptr = 4; // indirection operator
+
+assert(object == 4);
+
+// * see also:
+// https://en.cppreference.com/w/cpp/memory/addressof
+----
+
+=== Pointer to void
+
+Generic pointer
+
+[source,cpp]
+----
+int i = 1;
+
+int* pi = &i;
+
+void* vi = pi; // implicit conversion from any type
+
+int* pi2 = static_cast<int*>(vi); // explicit cast required
+----
+
+https://pubs.opengroup.org/onlinepubs/009695399/functions/send.html[Example 1]
+
+=== Null Pointer
+
+- Специальное значение, присущее указателю любого типа
+- Используется, чтобы указать на отсутствие объекта
+- Разыменовывание ведет к UB
+
+=== Invalid pointers
+
+Указатель может стать недействительным, если он указывает на локальный объект, который был уничтожен.
+
+[source, cpp]
+----
+int* makeInvalidPtr() {
+    int i = 0;
+    return &i;
+}
+
+void f() {
+    int* ptr = makeInvalidPtr(); // invalid pointer
+}
+----
+
+== Константность
+
+[source,cpp]
+----
+const int i = 32;
+i = 10; // error: cannot assign to variable
+----
+
+=== Константность и указатели
+
+[source, cpp]
+----
+int i = 32;
+
+int* p = &i; // pointer to int
+
+int j = 1;
+p = &j;     // OK
+*p = 100;   // OK
+
+----
+
+=== Константность и указатели
+
+[source, cpp]
+----
+int i = 32;
+
+const int* p = &i; // pointer to const int
+
+int j = 1;
+p = &j;     // OK
+*p = 100;   // error
+
+----
+
+=== Константность и указатели
+
+[source, cpp]
+----
+int i = 32;
+
+int* const p = &i; // const pointer to int
+
+int j = 1;
+p = &j;     // error
+*p = 100;   // OK
+
+----
+
+=== Константность и указатели
+
+[source, cpp]
+----
+int i = 32;
+
+const int* const p = &i; // const pointer to const int
+
+int j = 1;
+p = &j;     // error
+*p = 100;   // error
+
+----
+
+=== Константность и указатели
+
+> Все, что слева от `*` относится к типу
+
+> Все, что справа от `*` относится к указателю
+
+== Массивы
+- Непрерывная последовательность объектов определенного типа: `T a[N]`
+- индексация от `0` до `N-1` с помощью `operator[]`
+
+[source,cpp]
+----
+int arr1[10]; // not initialized
+int arr2[3] = {1, 2, 3};
+int arr3[3] = {}; // init with zeros
+int arr4[] = {1, 2, 3};
+
+int a = arr[0]; // subscript operator
+
+int mat[3][2] = {{1,1}, {1,1}, {1,1}}; // multidimensional
+int b = mat[0][0]; // subscript operator
+----
+
+=== sizeof
+
+[source,cpp]
+----
+int arr3[3] = {};
+assert(sizeof(arr3) == 3 * sizeof(int));
+
+int arr4[] = {1, 2, 3};
+assert(sizeof(arr4) == 3 * sizeof(int));
+----
+
+=== arrays and pointers
+
+Array-to-pointer decay
+
+[source,cpp]
+----
+int a[3] = {1, 2, 3};
+int* p = a; // implicit cast
+----
+
+== C-строки
+
+> `const char*` - тип строкового литерала
+
+[source,cpp]
+----
+const char* hello = "hello"; // immutable string
+----
+
+=== C-строки
+
+[source,cpp]
+----
+const char hello[] = "hello";
+std::cout << sizeof(hello); // what is expected?
+----
+
+=== C-строки
+
+[source,cpp]
+----
+const char hello[] = "hello";
+
+// lifehack: compilation error to get out the type
+hello = 3;
+// error: cannot assign to variable 'hello'
+// with const-qualified type 'const char [6]'
+----
+
+=== C-строки
+
+[source,cpp]
+----
+const char* hello = "hello";
+----
+
+> С-строки имеют терминирующий нуль `\0`
+
+> Чтобы найти длину строки, нужно посчитать количество символов до `\0`
+
+=== С-строки
+
+[source,cpp]
+----
+char hello[] = "hello"; // mutable string is legal?
+----
+
+== Арифметика с указателями
+
+[source,cpp]
+----
+int arr[100]{};
+int* p = arr;    // p points to arr[0]
+
+// adding an integer
+int* q = p + 2;  // q points to arr[2]
+int* s = 4 + p;  // s points to arr[4]
+
+// subtract a number
+int* a = s - 2;  // a points to arr[2]
+
+// Undefined behavior
+int* ub1 = p + 1000; // out of arr
+int* ub2 = p - 1;    // out of arr
+
+----
+
+=== Арифметика с указателями
+
+[source,cpp]
+----
+int arr[20]{};
+const int I = 3;
+const int J = 10;
+int* p = arr + I;
+int* q = arr + J;
+
+ptrdiff_t diff1 = p - q; // I - J
+ptrdiff_t diff2 = q - p; // J - I
+
+// ptrdiff_t - signed integer type (e.g.: long)
+
+/* Undefined behavior:
+1. p and q указывают на объекты из разных массивов
+2. результат разности не помещается в ptrdiff_t
+----
