@@ -11,7 +11,8 @@ telegram: [invite-link](https://t.me/+kYK4m9cU395jNDcy)
 
 ### Seminars
 
-- 11.09.2024 Sem01, Deadline: 18.09.2024 00:01 (*)
+- 11.09.2024 Sem01, Deadline: 20.09.2024 00:01 (дедлайн продлен на 48 часов)
+- 18.09.2024 Sem02, Deadline: 25.09.2024 00:01
 
 ### Homeworks
 
