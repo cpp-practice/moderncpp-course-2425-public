@@ -2,7 +2,7 @@
 
 ## Useful links
 
-telegram: [invite-link](https://t.me/+kYK4m9cU395jNDcy)
+Главная ведомость: [ссылка](https://docs.google.com/spreadsheets/d/1SvCU-OZ8IP7f32Tez5Olz0t2vpuykRampEqzcTDE-ro/edit)
 
 ### Lectures
 
