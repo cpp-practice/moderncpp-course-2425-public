@@ -9,6 +9,7 @@
 - 10.09.2024 Lec01 Intro ([adoc](/lec-01-01/lec-01-01.adoc) | [pdf](/lec-01-01/lec-01-01.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-01/html/%D0%A1%2B%2B.html#/))
 - 17.09.2024 Lec02 Fundamentals ([adoc](/lec-01-02/lec-01-02.adoc) | [pdf](/lec-01-02/lec-01-02.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-02/html/%D0%A1%2B%2B.html#/))
 - 24.09.2024 Lec03 Refs,Statements,Funcs ([adoc](/lec-01-03/lec-01-03.adoc) | [pdf](/lec-01-03/lec-01-03.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-03/html/%D0%A1%2B%2B.html#/))
+- 01.10.2024 Lec04 Functions ([adoc](/lec-01-04/lec-01-04.adoc) | [pdf](/lec-01-04/lec-01-04.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-04/html/%D0%A1%2B%2B.html#/))
 
 ### Seminars
 
@@ -21,6 +22,8 @@
 - 23.10.2024 Sem06(?), Deadline: 30.10.2024 11:00
 
 ### Homeworks
+
+- 26.09.2024 ha1 matrices
 
 ## Description
 
