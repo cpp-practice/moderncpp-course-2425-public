@@ -10,6 +10,7 @@
 - 17.09.2024 Lec02 Fundamentals ([adoc](/lec-01-02/lec-01-02.adoc) | [pdf](/lec-01-02/lec-01-02.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-02/html/%D0%A1%2B%2B.html#/))
 - 24.09.2024 Lec03 Refs,Statements,Funcs ([adoc](/lec-01-03/lec-01-03.adoc) | [pdf](/lec-01-03/lec-01-03.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-03/html/%D0%A1%2B%2B.html#/))
 - 01.10.2024 Lec04 Functions ([adoc](/lec-01-04/lec-01-04.adoc) | [pdf](/lec-01-04/lec-01-04.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-04/html/%D0%A1%2B%2B.html#/))
+- 15.10.2024 Lec05 Classes ([adoc](/lec-01-05/lec-01-05.adoc) | [pdf](/lec-01-05/lec-01-05.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-05/html/%D0%A1%2B%2B.html#/))
 
 ### Seminars
 
@@ -18,8 +19,8 @@
 - 25.09.2024 Sem03(Филипп), Deadline: 02.10.2024 11:00
 - 02.10.2024 Sem04(Филипп), Deadline: 09.10.2024 11:00
 - 08.10.2024 Control01(Егор), Deadline: 08.10.2024 21:30
-- 16.10.2024 Sem05(?), Deadline: 23.10.2024 11:00
-- 23.10.2024 Sem06(?), Deadline: 30.10.2024 11:00
+- 16.10.2024 Sem05(Егор), Deadline: 23.10.2024 11:00
+- 23.10.2024 Sem06(Константин), Deadline: 30.10.2024 11:00
 
 ### Homeworks
 
