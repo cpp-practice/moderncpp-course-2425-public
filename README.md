@@ -13,6 +13,7 @@
 - 15.10.2024 Lec05 Classes ([adoc](/lec-01-05/lec-01-05.adoc) | [pdf](/lec-01-05/lec-01-05.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-05/html/%D0%A1%2B%2B.html#/))
 - 22.10.2024 LecXX Cover skipped topics
 - 12.11.2024 Lec06 Classes: Alignment, Padding. Inheritance ([adoc](/lec-01-06/lec-01-06.adoc) | [pdf](/lec-01-06/lec-01-06.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-06/html/%D0%A1%2B%2B.html#/))
+- 19.11.2024 Lec07 Classes: Multiple Inheritance ([adoc](/lec-01-07/lec-01-07.adoc) | [pdf](/lec-01-07/lec-01-07.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-07/html/%D0%A1%2B%2B.html#/))
 
 ### Seminars
 
@@ -24,11 +25,14 @@
 - 16.10.2024 Sem05(Егор), Deadline: 30.10.2024 11:00
 - 23.10.2024 SemXX(Егор) - дополнительный семинар, Deadline: No
 - 13.11.2024 Sem06(Костя), Deadline: 20.11.2024 11:00
+- 20.11.2024 Sem07(Филипп), Deadline: 27.11.2024 11:00
+- 27.11.2024 Sem08(Филипп), Deadline: 03.12.2024 11:00
 
 ### Homeworks
 
 - 26.09.2024 ha1 matrices
 - 17.10.2024 ha2 bignum
+- 28.11.2024 ha3 ...
 
 ## Description
 
