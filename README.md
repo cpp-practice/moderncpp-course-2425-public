@@ -14,6 +14,7 @@
 - 22.10.2024 LecXX Cover skipped topics
 - 12.11.2024 Lec06 Classes: Alignment, Padding. Inheritance ([adoc](/lec-01-06/lec-01-06.adoc) | [pdf](/lec-01-06/lec-01-06.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-06/html/%D0%A1%2B%2B.html#/))
 - 19.11.2024 Lec07 Classes: Multiple Inheritance ([adoc](/lec-01-07/lec-01-07.adoc) | [pdf](/lec-01-07/lec-01-07.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-07/html/%D0%A1%2B%2B.html#/))
+- 26.11.2024 Lec08 Templates ([adoc](/lec-01-08/lec-01-08.adoc) | [pdf](/lec-01-08/lec-01-08.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-08/html/%D0%A1%2B%2B.html#/))
 
 ### Seminars
 
