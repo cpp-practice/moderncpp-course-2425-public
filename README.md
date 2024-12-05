@@ -41,7 +41,7 @@
 
 - 26.09.2024 ha1 matrices
 - 17.10.2024 ha2 bignum
-- 28.11.2024 ha3 ...
+- 28.11.2024 ha3 whatever
 
 ## Description
 
