@@ -16,7 +16,7 @@
 - 19.11.2024 Lec07 Classes: Multiple Inheritance ([adoc](/lec-01-07/lec-01-07.adoc) | [pdf](/lec-01-07/lec-01-07.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-07/html/%D0%A1%2B%2B.html#/))
 - 26.11.2024 Lec08 Templates ([adoc](/lec-01-08/lec-01-08.adoc) | [pdf](/lec-01-08/lec-01-08.pdf) | [html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-08/html/%D0%A1%2B%2B.html#/))
 - 10.12.2024 Lec09 Value Categories. Move Semantics ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-09/html/%D0%A1%2B%2B.html#/))
-- 17.12.2024 Lec10 Universal references. Perfect forwarding
+- 17.12.2024 Lec10 Universal references. Perfect forwarding ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-01-10/html/%D0%A1%2B%2B.html#/))
 - ??.??.???? Lec11 Errors & Exceptions
 
 ### Seminars
