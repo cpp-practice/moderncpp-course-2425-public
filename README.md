@@ -36,7 +36,7 @@
 - 03.12.2024 Control02, Deadline: 03.12.2024 21:00
 - 11.12.2024 Sem09(Филипп), Deadline: 18.12.2024 11:00
 - 18.12.2024 Sem10(Филипп), Deadline: 25.12.2024 11:00
-- 24.12.2024 Control03, Deadline: 24.12.2024 ??:??
+- 24.12.2024 Control03, Deadline: 24.12.2024 21:50
 - ??.??.???? ControlXX, Deadline: ??.??.???? ??:??
 
 ### Homeworks
