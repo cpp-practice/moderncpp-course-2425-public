@@ -24,6 +24,7 @@
 - 25.02.2025 Lec03 Meta, SFINAE ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-03/html/%D0%A1%2B%2B.html#/))
 - 04.03.2025 Lec04.1 auto, decltype, macros ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-04/part-01/html/%D0%A1%2B%2B.html#/))
 - 04.03.2025 Lec04.2 serialization ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-04/part-02/html/%D0%A1%2B%2B.html#/))
+- 18.03.2025 Lec05 Linking. Static & Dynamic Libraries ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-05/html/%D0%A1%2B%2B.html#/))
 - 25.03.2025 Lec06 Multithreading ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-06/html/%D0%A1%2B%2B.html#/))
 
 ### Seminars
