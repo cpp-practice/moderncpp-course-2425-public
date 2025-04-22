@@ -29,7 +29,7 @@
 - 01.04.2025 Lec07 Coroutines ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-07/html/%D0%A1%2B%2B.html#/))
 - 11.04.2025 Lec08 Memory Models
 - 15.04.2025 Lec09 Coroutines II ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-coro-2/html/%D0%A1%2B%2B.html#/))
-- 22.04.2025 Lec10 Draft: Concepts
+- 22.04.2025 Lec10 Concepts ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-10-concepts/html/%D0%A1%2B%2B.html#/))
 - 29.04.2025 Lec11 Draft: ABI
 - 13.05.2025 Lec12 Draft: Ranges
 - 20.05.2025 Lec13 Draft: Modules
