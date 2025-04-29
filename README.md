@@ -30,11 +30,11 @@
 - 11.04.2025 Lec08 Memory Models
 - 15.04.2025 Lec09 Coroutines II ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-coro-2/html/%D0%A1%2B%2B.html#/))
 - 22.04.2025 Lec10 Concepts ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-10-concepts/html/%D0%A1%2B%2B.html#/))
-- 29.04.2025 Lec11 Ranges
+- 29.04.2025 Lec11 Ranges ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-11-ranges/html/%D0%A1%2B%2B.html#/))
 - 13.05.2025 Lec12 Draft: ABI
 - 20.05.2025 Lec13 Draft: Modules
 - 27.05.2025 Lec14 Draft: [C++23/26 Overview | Allocators | Conan/CMake | Tooling | Sanitizers | LLVM/Clang | NetworkProgramming | Security]
-- 
+-
 ### Seminars
 
 - 11.09.2024 Sem01(Филипп), Deadline: 20.09.2024 00:01 (дедлайн продлен на 48 часов)
