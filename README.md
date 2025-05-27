@@ -31,8 +31,9 @@
 - 15.04.2025 Lec09 Coroutines II ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-coro-2/html/%D0%A1%2B%2B.html#/))
 - 22.04.2025 Lec10 Concepts ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-10-concepts/html/%D0%A1%2B%2B.html#/))
 - 29.04.2025 Lec11 Ranges ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-11-ranges/html/%D0%A1%2B%2B.html#/))
-- 18.05.2025 11:00 ONLINE Lec13 C++23/26 Overview ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-12-cpp2326overview/html/%D0%A1%2B%2B.html#/))
-- 28.05.2025 10:30 ONLINE Lec12 ABI
+- 18.05.2025 11:00 ONLINE Lec12 C++23/26 Overview ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-12-cpp2326overview/html/%D0%A1%2B%2B.html#/))
+- 28.05.2025 10:30 ONLINE Lec13 ABI ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-13-abi/html/%D0%A1%2B%2B.html#/))
+
 
 
 ### Seminars
