@@ -27,7 +27,7 @@
 - 18.03.2025 Lec05 Linking. Static & Dynamic Libraries ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-05/html/%D0%A1%2B%2B.html#/))
 - 25.03.2025 Lec06 Multithreading ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-06/html/%D0%A1%2B%2B.html#/))
 - 01.04.2025 Lec07 Coroutines ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-07/html/%D0%A1%2B%2B.html#/))
-- 11.04.2025 Lec08 Memory Models
+- 11.04.2025 Lec08 Memory Models ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-08-memmodel/html/%D0%A1%2B%2B.html#/))
 - 15.04.2025 Lec09 Coroutines II ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-coro-2/html/%D0%A1%2B%2B.html#/))
 - 22.04.2025 Lec10 Concepts ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-10-concepts/html/%D0%A1%2B%2B.html#/))
 - 29.04.2025 Lec11 Ranges ([html](https://htmlpreview.github.io/?https://github.com/cpp-practice/moderncpp-course-2425-public/blob/main/lec-02-11-ranges/html/%D0%A1%2B%2B.html#/))
